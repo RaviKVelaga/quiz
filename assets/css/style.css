@@ -1,0 +1,58 @@
+a {
+    font: caption;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.header>input {
+    border: white;
+    color: indigo;
+    background-color: white;
+    font: 1em sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz-start,
+.questions,
+.container {
+    margin: 10% auto;
+    max-width: 50%;
+
+}
+
+button {
+    background-color: indigo;
+    color: white;
+
+}
+
+.container::after {
+    display: none;
+}
+
+hr {
+    display: none;
+}
+
+ul ul li:before {
+    background: white;
+    padding: 1%;
+}
+
+li:nth-child(odd),
+li:nth-child(odd):before {
+    background-color: rgb(112, 69, 142);
+    color: black;
+}
+
+button:hover {
+    background-color: rgb(141, 76, 191);
+}
