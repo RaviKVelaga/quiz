@@ -1,3 +1,11 @@
+var timerElement = document.querySelector(".time-count");
+var startButton = document.querySelector(".start-button");
+var quizBlock = document.querySelector(".quiz-start");
+var questionElement = document.querySelector(".question");
+
+
+
+
 
 var allQuestions = [{
     question: "What keyword is used to check whether a given property is valid or not?",
@@ -23,3 +31,27 @@ var allQuestions = [{
     answer: "3.Both A and B"
 }];
 
+function startTimer() {
+    // event.preventDefault();
+
+    timer = setInterval(function () {
+        // console.log(timerCount);
+
+        timerElement.textContent = timerCount;
+        if (timerCount === 0) {
+            currentScore = timerCount;
+            // clearInterval(timer);
+            // quizOver();
+        }
+        else {
+            timerCount--;
+        }
+
+    }, 1000);
+}
+
+function switchPage(from, to) {
+    var location = window.location.pathname;
+    location = location.replace(from, to);
+    window.location.assign(location);
+}
