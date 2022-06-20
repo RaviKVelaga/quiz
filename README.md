@@ -1,5 +1,7 @@
 # quiz
 
+https://ravikvelaga.github.io/quiz/
+
 There are 4 quesions with 4 options to chooes within 40 sec.
 If the a wrong option selected then the penality will be 10 sec.
 Once the quiz finishes , there is an input to enter the details and save the score.
