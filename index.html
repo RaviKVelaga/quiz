@@ -2,37 +2,37 @@
 <html>
 
 <head>
-    <title>Code Quiz</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <title>Code Quiz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
 <body>
 
-    <div class="header">
-        <!-- Navigate to highscore.htl -->
-        <a href="./highscore.html">View Highscore !</a>
-        <div class="time"><strong>Count Down Timer :</strong> <span class="time-count"></span></div>
-    </div>
-    <div class="quiz-start">
-        <p><strong>Code Quiz challenge</strong> </p>
-        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
-            answers
-            will penalize your score/time by ten seconds!</p>
+  <div class="header">
+    <!--To view Highscore  -->
+    <a href="./highscore.html">View Highscore !</a>
+    <div class="time"><strong>Time :</strong> <span class="time-count"></span></div>
+  </div>
+  <div class="quiz-start">
+    <p><strong>Code Quiz challenge</strong> </p>
+    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+      answers
+      will penalize your score/time by ten seconds!</p>
 
-        <button class="start-button" value="start">Start</button>
+    <button class="start-button" value="start">Start</button>
 
+  </div>
+  <div class="container">
+    <div class="questions">
+      <p class=question></p>
+      <ol class="optionsUl"></ol>
     </div>
-    <div class="container">
-        <div class="questions">
-            <p class=question></p>
-            <ol class="optionsUl"></ol>
-        </div>
-        <hr class="hLine">
-    </div>
+    <hr class="hLine">
+  </div>
 
-    <script src="assets/script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 
 </html>
